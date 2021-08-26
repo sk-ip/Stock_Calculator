@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #7c3;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 30px;
+}
+
+body {
+  text-align: center;
+}
+
+label {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+input {
+  display: block;
+  margin: 1rem auto 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#submit-btn {
+  padding: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+#output-box {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+}
