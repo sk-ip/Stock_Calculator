@@ -7,7 +7,7 @@ var outputBox = document.querySelector("#output-box");
 function calculateProfitorLoss(initial, quantity, current) {
   if(current === initial) {
     // No profit or loss
-    showOutput("No pain No gain, No gain No pain");
+    showOutput("No Profit or Loss");
   } else if (current > initial) {
     // profit
     profitPerStock = (current - initial);
@@ -41,6 +41,8 @@ function submitHandler() {
 
   if(initial === 0 | quantity === 0 | current === 0) {
     showOutput("Enter all the inputs");
+  } else if(initial < 0 | quantity < 0 | current < 0) {
+    showOutput("All values should be positive");
   } else {
     calculateProfitorLoss(initial, quantity, current);
   }
